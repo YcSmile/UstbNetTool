@@ -130,7 +130,7 @@ class BeikeNet():
             print('上网模式: Ipv4  模式')
             print(BKNet_UEDV4.format(  infos['v4_flow']// 1024// 1024,infos['v4_flow'] // 1024 % 1024 ))
             print(BKNet_V4IP.format(infos['v4ip']))            
-
+    # 获取用户信息
     def infos(self):
         
         self.WebHeader['Cookie'] = 'myusername={0}; username={0}'.format(self.config['username'])
